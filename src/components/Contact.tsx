@@ -1,10 +1,8 @@
-import { useState, FormEvent, ChangeEvent } from "react";
+"use client";
 
-interface FormState {
-  name: string;
-  email: string;
-  message: string;
-}
+import { useState, FormEvent, ChangeEvent } from "react";
+import { sendEmail } from "@/actions/sendEmail";
+import { FormState } from "@/types/formState";
 
 const Contact = () => {
   const [formData, setFormData] = useState<FormState>({
@@ -34,21 +32,43 @@ const Contact = () => {
     setIsSubmitting(true);
     setSubmitMessage(null);
 
+    console.log(e);
     // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitMessage({
-        type: "success",
-        text: "Thanks for your message! I'll get back to you soon.",
-      });
 
-      // Reset form after successful submission
+    try {
+      await sendEmail(formData);
       setFormData({
         name: "",
         email: "",
         message: "",
       });
-    }, 1500);
+
+      setIsSubmitting(false);
+      setSubmitMessage({
+        type: "success",
+        text: "Thanks for your message! I'll get back to you soon.",
+      });
+    } catch (error: any) {
+      setIsSubmitting(false);
+      setSubmitMessage({
+        type: "error",
+        text: error,
+      });
+    }
+    // setTimeout(() => {
+    //   setIsSubmitting(false);
+    //   setSubmitMessage({
+    //     type: "success",
+    //     text: "Thanks for your message! I'll get back to you soon.",
+    //   });
+
+    //   // Reset form after successful submission
+    //         setFormData({
+    //     name: "",
+    //     email: "",
+    //     message: "",
+    //   });
+    // }, 1500);
   };
 
   return (
@@ -170,7 +190,7 @@ const Contact = () => {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="https://github.com/tecnodiniz/"
                   className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary hover:bg-primary/30 transition-colors duration-300"
                 >
                   <svg
