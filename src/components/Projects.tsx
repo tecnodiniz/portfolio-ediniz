@@ -5,8 +5,9 @@ import { useState } from "react";
 interface ProjectType {
   title: string;
   description: string;
-  image: string;
+  src: string;
   technologies: string[];
+
   demoLink?: string;
   codeLink?: string;
 }
@@ -15,36 +16,37 @@ const projects: ProjectType[] = [
   {
     title: "UnifyForm",
     description:
-      "Led backend development of an innovative form automation application for an insurance broker. Created Flask endpoints and integrated OpenAI API for intelligent document processing.",
-    image: "/project-placeholder.jpg",
+      "A simple system to unify forms from different sources using artificial intelligence. Created Flask endpoints and integrated OpenAI API for intelligent document processing.",
+    src: "/images/unify-form.png",
     technologies: ["Python", "Flask", "OpenAI", "JWT", "Docker"],
-    demoLink: "#",
-    codeLink: "#",
+
+    codeLink: "https://github.com/tecnodiniz/unify-form",
   },
   {
-    title: "Somos Milhões",
+    title: "Espiritus",
     description:
-      "Full-stack contribution to a web platform launch. Responsible for integration between React/TailwindCSS frontend and FastAPI/PostgreSQL backend, with focus on performance optimization.",
-    image: "/project-placeholder.jpg",
+      "Platform for registration, management, and search of African matrix terreiros. The system allows religious leaders to register their terreiros, manage participants, and share important information such as location, schedules, and infrastructure, while users can search for and find these spaces.",
+    src: "/images/espiritus.png",
     technologies: ["React", "TailwindCSS", "FastAPI", "PostgreSQL", "JWT"],
-    demoLink: "#",
-    codeLink: "#",
+
+    codeLink: "",
   },
   {
     title: "TreinaDev Shopping Club",
     description:
       "Collaborative development of a shopping club platform using Vue.js and Ruby on Rails. Implemented state management, protected routes, and applied TDD practices.",
-    image: "/project-placeholder.jpg",
+    src: "/images/unavailable.png",
     technologies: ["Vue.js", "Ruby on Rails", "TDD", "CSS"],
-    demoLink: "#",
-    codeLink: "#",
+
+    codeLink: "",
   },
   {
-    title: "Network Automation Suite",
+    title: "Portfólio E_Diniz",
     description:
-      "Internal tool suite with Python scripts and React dashboard to automate network management tasks, increasing operational efficiency by 25% in key departments.",
-    image: "/project-placeholder.jpg",
-    technologies: ["Python", "React", "Bash", "Linux"],
+      "Portfolio created with Next.js for myself. Check out the code and see how it was built. 🚀 ",
+    src: "/images/portfolio.png",
+    technologies: ["React", "Next", "Typescript", "TailwindCss"],
+
     codeLink: "#",
   },
 ];
@@ -73,7 +75,7 @@ const Projects = () => {
               {/* Project Image */}
               <div className="relative h-48 bg-black overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center text-secondary font-orbitron">
-                  [PROJECT IMAGE]
+                  <Image alt={project.title} src={project.src} fill />
                 </div>
 
                 {/* Glitchy effect on hover */}

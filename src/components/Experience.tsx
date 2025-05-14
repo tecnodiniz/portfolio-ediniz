@@ -13,7 +13,7 @@ const experiences: ExperienceItem[] = [
     company: "Facility & Bond",
     position: "Network Analyst & Developer",
     period: "October 2019 - Present",
-    location: "Atibaia, Brasil",
+    location: "Atibaia, Brazil",
     bullets: [
       "Developed internal applications with React and Python that automated manual tasks, increasing operational efficiency by approximately 25% in key departments.",
       "Implemented automation routines for repetitive processes, reducing execution time by up to 40% and improving team productivity.",
@@ -25,7 +25,7 @@ const experiences: ExperienceItem[] = [
     company: "UnifyForm",
     position: "Back-End Developer",
     period: "March 2025 - April 2025",
-    location: "São Paulo, Brasil",
+    location: "São Paulo, Brazil",
     bullets: [
       "Led the development of an innovative application for an insurance broker, focused on automating form creation, significantly reducing the time for generating complex documents.",
       "Responsible for backend development using Flask, including creating endpoints and integrating with OpenAI API.",
@@ -34,10 +34,10 @@ const experiences: ExperienceItem[] = [
     ],
   },
   {
-    company: "Somos Milhões",
+    company: "Espiritus",
     position: "Full-Stack Developer",
     period: "January 2024 - February 2025",
-    location: "São Paulo, Brasil",
+    location: "São Paulo, Brazil",
     bullets: [
       "Collaborated with two senior developers in developing an innovative web application, contributing to the successful launch of the platform to early users.",
       "Took responsibility for the integration between the React/TailwindCSS front-end and the FastAPI/PostgreSQL back-end, ensuring efficient and stable communication.",
@@ -49,7 +49,7 @@ const experiences: ExperienceItem[] = [
     company: "Campus Code",
     position: "Web Developer (TreinaDev Program)",
     period: "February 2023 - July 2023",
-    location: "São Paulo, Brasil",
+    location: "São Paulo, Brazil",
     bullets: [
       "Collaborated in the development of a shopping club platform with Vue.js in the front-end and Ruby on Rails in the back-end, delivering complete functionalities in an agile environment.",
       "Implemented state management and protected routes, ensuring smooth and secure navigation for users.",

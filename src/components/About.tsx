@@ -34,9 +34,21 @@ const About = () => {
                 <code>{`function init() {
   return {
     name: "Eduardo",
-    role: "Software Engineer"
+    role: "Software Developer"
   }
 }`}</code>
+              </pre>
+            </div>
+
+            <div className="absolute -top-10 -right-10 p-1 bg-dark-bg/90 rounded border border-primary/30 rotate-3 hidden md:block">
+              <pre className="text-xs text-primary/90 font-mono">
+                <Image
+                  className="hidden lg:block"
+                  alt="Eduardo Diniz"
+                  src="/images/picture-3.jpg"
+                  width={200}
+                  height={0}
+                />
               </pre>
             </div>
           </div>

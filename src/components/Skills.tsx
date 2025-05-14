@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface SkillCategory {
   name: string;
   skills: string[];
@@ -91,8 +93,10 @@ const Skills = () => {
                 <div className="w-12 h-12 mb-4 rounded-full bg-primary/20 flex items-center justify-center">
                   <span className="text-primary text-2xl">🌐</span>
                 </div>
-                <h4 className="text-lg font-orbitron mb-2">Wizard</h4>
-                <p className="text-foreground/80">English Proficiency (C2)</p>
+                <h4 className="text-lg font-orbitron mb-2">Estácio</h4>
+                <p className="text-foreground/80">
+                  Análise e Desenvolvimento de Sistemas
+                </p>
               </div>
 
               <div className="bg-dark-bg/70 border border-secondary/30 rounded-lg p-6 flex flex-col items-center text-center hover:border-secondary/60 transition-all duration-300">
@@ -100,7 +104,10 @@ const Skills = () => {
                   <span className="text-secondary text-2xl">💻</span>
                 </div>
                 <h4 className="text-lg font-orbitron mb-2">Campus Code</h4>
-                <p className="text-foreground/80">TreinaDev Program</p>
+                <Link href="https://app.campuscode.com.br/certificado/7QCAFvfqMBfhDK9pdT92chkC">
+                  {" "}
+                  <p className="text-foreground/80">TreinaDev Program</p>
+                </Link>
               </div>
 
               <div className="bg-dark-bg/70 border border-secondary/30 rounded-lg p-6 flex flex-col items-center text-center hover:border-secondary/60 transition-all duration-300">
@@ -108,9 +115,11 @@ const Skills = () => {
                   <span className="text-accent text-2xl">☁️</span>
                 </div>
                 <h4 className="text-lg font-orbitron mb-2">WarburgPincus</h4>
-                <p className="text-foreground/80">
-                  Cloud FullStack Development
-                </p>
+                <Link href="https://www.dio.me/certificate/17B7010F/share">
+                  <p className="text-foreground/80">
+                    Cloud FullStack Development
+                  </p>
+                </Link>
               </div>
             </div>
           </div>
