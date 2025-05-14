@@ -47,7 +47,7 @@ const projects: ProjectType[] = [
     src: "/images/portfolio.png",
     technologies: ["React", "Next", "Typescript", "TailwindCss"],
 
-    codeLink: "#",
+    codeLink: "https://github.com/tecnodiniz/portfolio-ediniz",
   },
 ];
 
