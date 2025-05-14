@@ -60,23 +60,24 @@ const About = () => {
 
             <div className="space-y-4 text-foreground/90">
               <p>
-                I'm a <span className="text-primary">Software Developer</span>{" "}
-                with 3 years of experience creating scalable applications using
-                React, Next.js, Node.js, NestJS, and Python frameworks like
-                FastAPI and Flask.
+                I&apos;m a{" "}
+                <span className="text-primary">Software Developer</span> with 3
+                years of experience creating scalable applications using React,
+                Next.js, Node.js, NestJS, and Python frameworks like FastAPI and
+                Flask.
               </p>
 
               <p>
                 My expertise includes{" "}
                 <span className="text-secondary">Clean Architecture</span>,
                 SOLID principles, and development methodologies like TDD and
-                DDD. I'm passionate about delivering high-quality, performant
-                code solutions.
+                DDD. I&apos;m passionate about delivering high-quality,
+                performant code solutions.
               </p>
 
               <p>
-                Beyond pure technical skills, I'm committed to best practices
-                like
+                Beyond pure technical skills, I&apos;m committed to best
+                practices like
                 <span className="text-accent"> Clean Code</span>, version
                 control with Git, and quality assurance through linting with
                 ESLint and comprehensive testing.

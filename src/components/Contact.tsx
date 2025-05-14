@@ -48,11 +48,14 @@ const Contact = () => {
         type: "success",
         text: "Thanks for your message! I'll get back to you soon.",
       });
-    } catch (error: any) {
+    } catch (error) {
       setIsSubmitting(false);
+
+      const errorMessage =
+        error instanceof Error ? error.message : "Unexpected Error";
       setSubmitMessage({
         type: "error",
-        text: error,
+        text: errorMessage,
       });
     }
     // setTimeout(() => {

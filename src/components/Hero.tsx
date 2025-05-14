@@ -16,8 +16,7 @@ const Hero = () => {
 
     // Grid parameters
     const gridSize = 30;
-    const maxDistance = 500;
-    const perspective = 4;
+
     const horizonY = canvas.height * 0.5;
     const speed = 0.5;
 
@@ -35,9 +34,6 @@ const Hero = () => {
 
       // Horizontal lines
       for (let y = horizonY; y < canvas.height; y += gridSize) {
-        const scale = (y - horizonY) / maxDistance;
-        const currentGridSize = gridSize + scale * perspective * gridSize;
-
         ctx.beginPath();
         ctx.moveTo(0, y);
         ctx.lineTo(canvas.width, y);

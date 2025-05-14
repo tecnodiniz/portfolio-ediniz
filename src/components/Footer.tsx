@@ -78,7 +78,7 @@ const Footer = () => {
 
         <div className="mt-8 pt-8 border-t border-foreground/10 text-center">
           <p className="text-foreground/50 text-xs">
-            <span className="text-secondary">// </span>
+            <span className="text-secondary">|| </span>
             Designed with
             <span className="text-primary"> ♥ </span>
             in a cyberpunk universe
