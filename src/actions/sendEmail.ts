@@ -19,8 +19,9 @@ export async function sendEmail(formData: FormState): Promise<void> {
   });
 
   await transporter.sendMail({
-    from: `"${name} <${email}>" `,
+    from: `"${name} - via Portfólio"`,
     to: process.env.EMAIL_TO,
+    replyTo: email,
     subject: "Mensagem do portfólio",
     text: message,
   });
