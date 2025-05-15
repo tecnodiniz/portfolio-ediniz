@@ -17,8 +17,8 @@ const Footer = () => {
               E_DINIZ
             </Link>
             <p className="mt-2 text-foreground/70 max-w-md">
-              Software Engineer specialized in building scalable APIs with
-              Node.js, NestJS, Python and more.
+              Software Developer specialized in building web applications with
+              Node.js, Python, React, and more.
             </p>
           </div>
 
