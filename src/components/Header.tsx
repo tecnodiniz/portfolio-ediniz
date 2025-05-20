@@ -80,7 +80,7 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         <div
-          className={`fixed inset-0 bg-background/95 flex flex-col items-center justify-center space-y-8 transition-all duration-500 md:hidden ${
+          className={`h-[100vh] fixed inset-0 bg-background/95 flex flex-col items-center justify-center space-y-8 transition-all duration-500 md:hidden ${
             isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
           }`}
         >
