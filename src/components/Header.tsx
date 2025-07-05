@@ -1,23 +1,26 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
+import LocaleSwitcher from "./LocaleSwitcher";
 
 interface NavItem {
   label: string;
   href: string;
 }
 
-const NavItems: NavItem[] = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "#about" },
-  { label: "Experience", href: "#experience" },
-  { label: "Projects", href: "#projects" },
-  { label: "Skills", href: "#skills" },
-  { label: "Contact", href: "#contact" },
-];
-
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const t = useTranslations("Header");
+
+  const NavItems: NavItem[] = [
+    { label: t("home"), href: "/" },
+    { label: t("about"), href: "#about" },
+    { label: t("experience"), href: "#experience" },
+    { label: t("projects"), href: "#projects" },
+    { label: t("skills"), href: "#skills" },
+    { label: t("contact"), href: "#contact" },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,7 +41,7 @@ const Header = () => {
           : "bg-transparent py-5"
       }`}
     >
-      <div className="container mx-auto px-6 flex justify-between items-center">
+      <div className="container px-6 flex justify-between items-center">
         <Link href="/" className="font-orbitron text-2xl font-bold relative">
           <span className="neon-text relative z-10" data-text="E_DINIZ">
             E_DINIZ
@@ -47,6 +50,7 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
+          <LocaleSwitcher />
           {NavItems.map((item) => (
             <Link
               key={item.label}
@@ -84,6 +88,9 @@ const Header = () => {
             isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
           }`}
         >
+          <div className="mb-4">
+            <LocaleSwitcher />
+          </div>
           {NavItems.map((item) => (
             <Link
               key={item.label}

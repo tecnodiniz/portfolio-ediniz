@@ -1,0 +1,201 @@
+{
+  "Header": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "specialize": "Specialized in building scalable APIs with",
+    "view_my_work": "View My Work",
+    "contact_me": "Contact Me",
+    "and_more": "and more"
+  },
+  "About": {
+    "about_me": "About Me",
+    "i_am": "I'm a",
+    "role": "Software Developer",
+    "resume": "with 3 years of experience creating scalable applications using React, Next.js, Node.js, NestJS, and Python frameworks like FastAPI and Flask",
+    "expertise_title": "My expertise includes",
+    "expertise_clean_arch": "Clean Architecture",
+    "expertise_text": "SOLID principles, and development methodologies like TDD and DDD. I'm passionate about delivering high-quality, performant code solutions",
+    "expertise_text_2": "Beyond pure technical skills, I'm committed to best practices like",
+    "expertise_clean_code": "Clean Code",
+    "expertise_text_3": "version control with Git, and quality assurance through linting with ESLint and comprehensive testing",
+    "contact": "Contact",
+    "city": "São Paulo, Brazil",
+    "education": "Education",
+    "university": "UNIVERSITY OF ESTÁCIO DE SÁ",
+    "course": "Systems Analysis and Development",
+    "university_end": "Completed: December 2024"
+  },
+  "Experience": {
+    "work_experience": "Work Experience",
+    "items": [
+      {
+        "company": "Facility & Bond",
+        "position": "Network Analyst & Developer",
+        "period": "October 2019 - May 2025",
+        "location": "Atibaia, Brazil",
+        "bullets": [
+          "Collaborated with two senior developers in developing an innovative web application, contributing to the successful launch of the platform to early users.",
+          "Took responsibility for the integration between the React/TailwindCSS front-end and the FastAPI/PostgreSQL back-end, ensuring efficient and stable communication.",
+          "Modeled and implemented high-performance REST APIs, optimizing data flow and facilitating application scalability.",
+          "Configured JWT authentication, strengthening platform security and ensuring robust access control from the MVP."
+        ]
+      },
+      {
+        "company": "UnifyForm",
+        "position": "Back-End Developer",
+        "period": "March 2025 - April 2025",
+        "location": "São Paulo, Brazil",
+        "bullets": [
+          "Led the development of an innovative application for an insurance broker, focused on automating form creation, significantly reducing the time for generating complex documents.",
+          "Responsible for backend development using Flask, including creating endpoints and integrating with OpenAI API.",
+          "Implemented a robust authentication system, ensuring the protection and integrity of sensitive user data.",
+          "Developed REST APIs for uploading and intelligent document processing via GPT-4 Omni, optimizing manual tasks with advanced NLP."
+        ]
+      },
+      {
+        "company": "Espiritus",
+        "position": "Full-Stack Developer",
+        "period": "January 2024 - February 2025",
+        "location": "São Paulo, Brazil",
+        "bullets": [
+          "Collaborated with two senior developers in developing an innovative web application, contributing to the successful launch of the platform to early users.",
+          "Took responsibility for the integration between the React/TailwindCSS front-end and the FastAPI/PostgreSQL back-end, ensuring efficient and stable communication.",
+          "Modeled and implemented high-performance REST APIs, optimizing data flow and facilitating application scalability.",
+          "Configured JWT authentication, strengthening platform security and ensuring robust access control from the MVP."
+        ]
+      },
+      {
+        "company": "Campus Code",
+        "position": "Web Developer (TreinaDev Program)",
+        "period": "February 2023 - July 2023",
+        "location": "São Paulo, Brazil",
+        "bullets": [
+          "Collaborated in the development of a shopping club platform with Vue.js in the front-end and Ruby on Rails in the back-end, delivering complete functionalities in an agile environment.",
+          "Implemented state management and protected routes, ensuring smooth and secure navigation for users.",
+          "Integrated multiple system modules, promoting a cohesive and scalable architecture.",
+          "Consistently applied TDD practices, raising the quality and stability of the code delivered by the team."
+        ]
+      }
+    ]
+  },
+  "Projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "title": "UnifyForm",
+        "description": "A simple system to unify forms from different sources using artificial intelligence. Created Flask endpoints and integrated OpenAI API for intelligent document processing.",
+        "src": "/images/unify-form.png",
+        "technologies": ["Python", "Flask", "OpenAI", "JWT", "Docker"],
+
+        "codeLink": "https://github.com/tecnodiniz/unify-form"
+      },
+      {
+        "title": "Espiritus",
+        "description": "Platform for registration, management, and search of African matrix terreiros. The system allows religious leaders to register their terreiros, manage participants, and share important information such as location, schedules, and infrastructure, while users can search for and find these spaces.",
+        "src": "/images/espiritus.png",
+        "technologies": [
+          "React",
+          "TailwindCSS",
+          "FastAPI",
+          "PostgreSQL",
+          "JWT"
+        ],
+
+        "codeLink": ""
+      },
+      {
+        "title": "TreinaDev Shopping Club",
+        "description": "Collaborative development of a shopping club platform using Vue.js and Ruby on Rails. Implemented state management, protected routes, and applied TDD practices.",
+        "src": "/images/unavailable.png",
+        "technologies": ["Vue.js", "Ruby on Rails", "TDD", "CSS"],
+
+        "codeLink": ""
+      },
+      {
+        "title": "Portfólio E_Diniz",
+        "description": "Portfolio created with Next.js for myself. Check out the code and see how it was built. 🚀 ",
+        "src": "/images/portfolio.png",
+        "technologies": ["React", "Next", "Typescript", "TailwindCss"],
+
+        "codeLink": "https://github.com/tecnodiniz/portfolio-ediniz"
+      }
+    ]
+  },
+  "Skills": {
+    "title": "Technical Skills",
+    "items": [
+      {
+        "name": "Front-End",
+        "skills": [
+          "HTML",
+          "CSS",
+          "Tailwind",
+          "React",
+          "Vue.js",
+          "JavaScript",
+          "TypeScript"
+        ]
+      },
+      {
+        "name": "Back-End",
+        "skills": ["Node.js", "NestJS", "REST", "GraphQL", "Python", "Ruby"]
+      },
+      {
+        "name": "Database",
+        "skills": ["PrismaORM", "PostgreSQL", "MongoDB"]
+      },
+      {
+        "name": "Cloud & DevOps",
+        "skills": ["AWS", "GCP", "Docker"]
+      },
+      {
+        "name": "Testing & QA",
+        "skills": ["E2E", "Jest", "TDD"]
+      },
+      {
+        "name": "Security",
+        "skills": ["JWT Authentication", "RSA"]
+      },
+      {
+        "name": "Best Practices",
+        "skills": ["Clean Code", "Agile", "CI/CD", "Git"]
+      }
+    ],
+    "certifications": {
+      "title": "Certifications",
+      "ads": "System Analysis and Software Development",
+      "treinaDev": "TreinaDev Program",
+      "cloud_full": "Cloud FullStack Development"
+    }
+  },
+  "Contact": {
+    "title": "Contact",
+    "get_in": "Get in Touch",
+    "phone": "Phone",
+    "location": "Location",
+    "city": "São Paulo, Brazil",
+    "connect": "Connect with Me",
+    "send_message": "Send a Message",
+    "name": "Name",
+    "message": "Message",
+    "processing": "Processing",
+    "success": "Thank you for your message! I'll get back to you soon.",
+    "error": "Error sending message.",
+    "submit": "Send Message"
+  },
+  "Footer": {
+    "description": "Software Developer specialized in building web applications with Node.js, Python, React, and more.",
+    "copyright": "Eduardo Diniz. All Rights Reserved."
+  },
+  "LocaleSwitcher": {
+    "pt-BR": "Portuguese",
+    "en": "English",
+    "label": "Languages"
+  }
+}

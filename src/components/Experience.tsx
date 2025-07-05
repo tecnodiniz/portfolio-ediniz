@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 
 interface ExperienceItem {
@@ -8,59 +9,10 @@ interface ExperienceItem {
   bullets: string[];
 }
 
-const experiences: ExperienceItem[] = [
-  {
-    company: "Facility & Bond",
-    position: "Network Analyst & Developer",
-    period: "October 2019 - Present",
-    location: "Atibaia, Brazil",
-    bullets: [
-      "Developed internal applications with React and Python that automated manual tasks, increasing operational efficiency by approximately 25% in key departments.",
-      "Implemented automation routines for repetitive processes, reducing execution time by up to 40% and improving team productivity.",
-      "Managed network infrastructure, Windows/Linux servers, firewall, and corporate security, ensuring high availability and integrity of systems.",
-      "Provided advanced technical support and monitored servers, ensuring continuous stability and fast response to critical incidents.",
-    ],
-  },
-  {
-    company: "UnifyForm",
-    position: "Back-End Developer",
-    period: "March 2025 - April 2025",
-    location: "São Paulo, Brazil",
-    bullets: [
-      "Led the development of an innovative application for an insurance broker, focused on automating form creation, significantly reducing the time for generating complex documents.",
-      "Responsible for backend development using Flask, including creating endpoints and integrating with OpenAI API.",
-      "Implemented a robust authentication system, ensuring the protection and integrity of sensitive user data.",
-      "Developed REST APIs for uploading and intelligent document processing via GPT-4 Omni, optimizing manual tasks with advanced NLP.",
-    ],
-  },
-  {
-    company: "Espiritus",
-    position: "Full-Stack Developer",
-    period: "January 2024 - February 2025",
-    location: "São Paulo, Brazil",
-    bullets: [
-      "Collaborated with two senior developers in developing an innovative web application, contributing to the successful launch of the platform to early users.",
-      "Took responsibility for the integration between the React/TailwindCSS front-end and the FastAPI/PostgreSQL back-end, ensuring efficient and stable communication.",
-      "Modeled and implemented high-performance REST APIs, optimizing data flow and facilitating application scalability.",
-      "Configured JWT authentication, strengthening platform security and ensuring robust access control from the MVP.",
-    ],
-  },
-  {
-    company: "Campus Code",
-    position: "Web Developer (TreinaDev Program)",
-    period: "February 2023 - July 2023",
-    location: "São Paulo, Brazil",
-    bullets: [
-      "Collaborated in the development of a shopping club platform with Vue.js in the front-end and Ruby on Rails in the back-end, delivering complete functionalities in an agile environment.",
-      "Implemented state management and protected routes, ensuring smooth and secure navigation for users.",
-      "Integrated multiple system modules, promoting a cohesive and scalable architecture.",
-      "Consistently applied TDD practices, raising the quality and stability of the code delivered by the team.",
-    ],
-  },
-];
-
 const Experience = () => {
   const [activeTab, setActiveTab] = useState(0);
+  const t = useTranslations("Experience");
+  const experiences = t.raw("items") as ExperienceItem[];
 
   return (
     <section id="experience" className="py-24 relative">
@@ -69,7 +21,7 @@ const Experience = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <h2 className="text-3xl font-orbitron font-bold mb-12 text-center">
-          <span className="text-primary">&lt;</span> Work Experience{" "}
+          <span className="text-primary">&lt;</span> {t("work_experience")}{" "}
           <span className="text-primary">/&gt;</span>
         </h2>
 
@@ -92,7 +44,7 @@ const Experience = () => {
           </div>
 
           {/* Experience Details */}
-          <div className="md:w-2/3 bg-dark-bg/70 p-6 rounded border border-secondary/20">
+          <div className="md:w-2/3 min-h-100 bg-dark-bg/70 p-6 rounded border border-secondary/20">
             <h3 className="text-xl font-orbitron font-semibold">
               <span className="text-foreground">
                 {experiences[activeTab].position}

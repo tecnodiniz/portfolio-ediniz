@@ -1,8 +1,10 @@
 import { useEffect, useRef } from "react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const t = useTranslations("Hero");
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -91,11 +93,11 @@ const Hero = () => {
         </h3>
 
         <p className="text-lg mb-8 max-w-2xl mx-auto md:mx-0">
-          Specialized in building scalable APIs with
+          {t("specialize")}
           <span className="text-secondary"> Node.js</span>,
           <span className="text-primary"> NestJS</span>,
           <span className="text-primary"> Next.js</span>,
-          <span className="text-accent"> Python</span> and more.
+          <span className="text-accent"> Python</span> {t("and_more")}.
         </p>
 
         <div className="flex gap-4 flex-col sm:flex-row justify-center md:justify-start">
@@ -104,7 +106,7 @@ const Hero = () => {
             className="px-8 py-3 border border-primary rounded bg-primary/10 
               hover:bg-primary/20 transition-all duration-300 font-orbitron flex items-center justify-center"
           >
-            View My Work
+            {t("view_my_work")}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5 ml-2"
@@ -126,7 +128,7 @@ const Hero = () => {
             className="px-8 py-3 border border-secondary rounded bg-secondary/10 
               hover:bg-secondary/20 transition-all duration-300 font-orbitron flex items-center justify-center"
           >
-            Contact Me
+            {t("contact_me")}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5 ml-2"

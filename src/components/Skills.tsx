@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 interface SkillCategory {
@@ -5,46 +6,9 @@ interface SkillCategory {
   skills: string[];
 }
 
-const skillCategories: SkillCategory[] = [
-  {
-    name: "Front-End",
-    skills: [
-      "HTML",
-      "CSS",
-      "Tailwind",
-      "React",
-      "Vue.js",
-      "JavaScript",
-      "TypeScript",
-    ],
-  },
-  {
-    name: "Back-End",
-    skills: ["Node.js", "NestJS", "REST", "GraphQL", "Python", "Ruby"],
-  },
-  {
-    name: "Database",
-    skills: ["PrismaORM", "PostgreSQL", "MongoDB"],
-  },
-  {
-    name: "Cloud & DevOps",
-    skills: ["AWS", "GCP", "Docker"],
-  },
-  {
-    name: "Testing & QA",
-    skills: ["E2E", "Jest", "TDD"],
-  },
-  {
-    name: "Security",
-    skills: ["JWT Authentication", "RSA"],
-  },
-  {
-    name: "Best Practices",
-    skills: ["Clean Code", "Agile", "CI/CD", "Git"],
-  },
-];
-
 const Skills = () => {
+  const t = useTranslations("Skills");
+  const skillCategories = t.raw("items") as SkillCategory[];
   return (
     <section id="skills" className="py-24 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-dark-bg to-background z-0"></div>
@@ -52,7 +16,7 @@ const Skills = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <h2 className="text-3xl font-orbitron font-bold mb-12 text-center">
-          <span className="text-primary">$</span> Technical Skills{" "}
+          <span className="text-primary">$</span> {t("title")}{" "}
           <span className="text-primary">$</span>
         </h2>
 
@@ -85,7 +49,7 @@ const Skills = () => {
           {/* Certification section */}
           <div className="mt-16">
             <h3 className="text-2xl font-orbitron font-bold mb-8 text-center text-primary">
-              Certifications
+              {t("certifications.title")}
             </h3>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -94,9 +58,7 @@ const Skills = () => {
                   <span className="text-primary text-2xl">🌐</span>
                 </div>
                 <h4 className="text-lg font-orbitron mb-2">Estácio</h4>
-                <p className="text-foreground/80">
-                  Análise e Desenvolvimento de Sistemas
-                </p>
+                <p className="text-foreground/80">{t("certifications.ads")}</p>
               </div>
 
               <div className="bg-dark-bg/70 border border-secondary/30 rounded-lg p-6 flex flex-col items-center text-center hover:border-secondary/60 transition-all duration-300">
@@ -106,7 +68,9 @@ const Skills = () => {
                 <h4 className="text-lg font-orbitron mb-2">Campus Code</h4>
                 <Link href="https://app.campuscode.com.br/certificado/7QCAFvfqMBfhDK9pdT92chkC">
                   {" "}
-                  <p className="text-foreground/80">TreinaDev Program</p>
+                  <p className="text-foreground/80">
+                    {t("certifications.treinaDev")}
+                  </p>
                 </Link>
               </div>
 
@@ -117,7 +81,7 @@ const Skills = () => {
                 <h4 className="text-lg font-orbitron mb-2">WarburgPincus</h4>
                 <Link href="https://www.dio.me/certificate/17B7010F/share">
                   <p className="text-foreground/80">
-                    Cloud FullStack Development
+                    {t("certifications.cloud_full")}
                   </p>
                 </Link>
               </div>
