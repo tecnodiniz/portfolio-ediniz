@@ -3,8 +3,10 @@
 import { useState, FormEvent, ChangeEvent } from "react";
 import { sendEmail } from "@/actions/sendEmail";
 import { FormState } from "@/types/formState";
+import { useTranslations } from "next-intl";
 
 const Contact = () => {
+  const t = useTranslations("Contact");
   const [formData, setFormData] = useState<FormState>({
     name: "",
     email: "",
@@ -46,16 +48,14 @@ const Contact = () => {
       setIsSubmitting(false);
       setSubmitMessage({
         type: "success",
-        text: "Thanks for your message! I'll get back to you soon.",
+        text: t("success"),
       });
     } catch (error) {
       setIsSubmitting(false);
 
-      const errorMessage =
-        error instanceof Error ? error.message : "Unexpected Error";
       setSubmitMessage({
         type: "error",
-        text: errorMessage,
+        text: `${t("error")}: ${error}`,
       });
     }
     // setTimeout(() => {
@@ -80,7 +80,7 @@ const Contact = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <h2 className="text-3xl font-orbitron font-bold mb-12 text-center">
-          <span className="text-accent">&gt;&gt;</span> Contact Me{" "}
+          <span className="text-accent">&gt;&gt;</span> {t("title")}{" "}
           <span className="text-accent">&lt;&lt;</span>
         </h2>
 
@@ -88,7 +88,7 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="bg-light-bg/20 p-8 rounded-lg border border-primary/30 hover:border-primary/60 transition-all duration-300">
             <h3 className="text-xl font-orbitron font-semibold mb-6 text-primary">
-              Get In Touch
+              {t("get_in")}
             </h3>
 
             <div className="space-y-6">
@@ -133,7 +133,9 @@ const Contact = () => {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="font-orbitron text-secondary mb-1">Phone</h4>
+                  <h4 className="font-orbitron text-secondary mb-1">
+                    {t("phone")}
+                  </h4>
                   <p className="text-foreground/90">+55 11 9 8368-3715</p>
                 </div>
               </div>
@@ -163,9 +165,9 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-orbitron text-secondary mb-1">
-                    Location
+                    {t("location")}
                   </h4>
-                  <p className="text-foreground/90">São Paulo, Brasil</p>
+                  <p className="text-foreground/90">{t("city")}</p>
                 </div>
               </div>
             </div>
@@ -173,7 +175,7 @@ const Contact = () => {
             {/* Social Links */}
             <div className="mt-10">
               <h4 className="font-orbitron text-secondary mb-4">
-                Connect With Me
+                {t("connect")}
               </h4>
               <div className="flex space-x-4">
                 <a
@@ -217,7 +219,7 @@ const Contact = () => {
               className="bg-light-bg/20 p-8 rounded-lg border border-secondary/30 hover:border-secondary/60 transition-all duration-300"
             >
               <h3 className="text-xl font-orbitron font-semibold mb-6 text-secondary">
-                Send Me a Message
+                {t("send_message")}
               </h3>
 
               <div className="space-y-6">
@@ -226,7 +228,7 @@ const Contact = () => {
                     htmlFor="name"
                     className="block text-foreground/90 mb-2 font-orbitron text-sm"
                   >
-                    Name
+                    {t("name")}
                   </label>
                   <input
                     type="text"
@@ -262,7 +264,7 @@ const Contact = () => {
                     htmlFor="message"
                     className="block text-foreground/90 mb-2 font-orbitron text-sm"
                   >
-                    Message
+                    {t("message")}
                   </label>
                   <textarea
                     id="message"
@@ -307,10 +309,10 @@ const Contact = () => {
                           d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                         ></path>
                       </svg>
-                      Processing...
+                      {t("processing")}...
                     </span>
                   ) : (
-                    "Send Message"
+                    t("submit")
                   )}
                 </button>
 

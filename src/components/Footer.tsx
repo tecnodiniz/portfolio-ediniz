@@ -1,7 +1,9 @@
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const t = useTranslations("Footer");
 
   return (
     <footer className="bg-dark-bg relative py-12">
@@ -17,8 +19,7 @@ const Footer = () => {
               E_DINIZ
             </Link>
             <p className="mt-2 text-foreground/70 max-w-md">
-              Software Developer specialized in building web applications with
-              Node.js, Python, React, and more.
+              {t("description")}
             </p>
           </div>
 
@@ -71,7 +72,7 @@ const Footer = () => {
             </div>
 
             <p className="text-foreground/60 text-sm font-mono">
-              &copy; {currentYear} Eduardo Diniz. All Rights Reserved.
+              &copy; {currentYear} {t("copyright")}
             </p>
           </div>
         </div>

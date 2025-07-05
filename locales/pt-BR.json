@@ -1,0 +1,198 @@
+{
+  "Header": {
+    "home": "Home",
+    "about": "Sobre mim",
+    "experience": "Experiencia",
+    "projects": "Projetos",
+    "skills": "Habilidades",
+    "contact": "Contato"
+  },
+  "Hero": {
+    "specialize": "Especializado em construir APIs escaláveis com",
+    "view_my_work": "Ver meu trabalho",
+    "contact_me": "Entre em contato",
+    "and_more": "e outros"
+  },
+  "About": {
+    "about_me": "Sobre mim",
+    "i_am": "Sou",
+    "role": "Desenvolvedor de Software",
+    "resume": "com 3 anos de experiência criando aplicações escaláveis usando React, Next.js, Node.js, NestJS e frameworks Python como FastAPI e Flask",
+    "expertise_title": "Minha especialidade inclui",
+    "expertise_clean_arch": "Arquitetura Limpa",
+    "expertise_text": "princípios SOLID e metodologias de desenvolvimento como TDD e DDD. Sou apaixonado por entregar soluções de código performáticas e de alta qualidade",
+    "expertise_text_2": "Além das habilidades técnicas, sou comprometido com boas práticas como",
+    "expertise_clean_code": "Código Limpo",
+    "expertise_text_3": "controle de versão com Git e garantia de qualidade por meio de linting com ESLint e testes abrangentes",
+    "contact": "Contato",
+    "city": "São Paulo, Brasil",
+    "education": "Educação",
+    "university": "UNIVERSIDADE ESTÁCIO DE SÁ",
+    "course": "Análise e Desenvolvimento de Sistemas",
+    "university_end": "Concluído: Dezembro de 2024"
+  },
+  "Experience": {
+    "work_experience": "Experiência Profissional",
+    "items": [
+      {
+        "company": "Facility & Bond",
+        "position": "Analista de Redes e Desenvolvedor",
+        "period": "Outubro de 2019 - Maio de 2025",
+        "location": "Atibaia, Brasil",
+        "bullets": [
+          "Colaborei com dois desenvolvedores sêniores no desenvolvimento de uma aplicação web inovadora, contribuindo para o lançamento bem-sucedido da plataforma para os primeiros usuários.",
+          "Fui responsável pela integração entre o front-end em React/TailwindCSS e o back-end em FastAPI/PostgreSQL, garantindo uma comunicação eficiente e estável.",
+          "Modelei e implementei APIs REST de alto desempenho, otimizando o fluxo de dados e facilitando a escalabilidade da aplicação.",
+          "Configurei autenticação com JWT, fortalecendo a segurança da plataforma e garantindo um controle de acesso robusto desde o MVP."
+        ]
+      },
+      {
+        "company": "UnifyForm",
+        "position": "Desenvolvedor Back-End",
+        "period": "Março de 2025 - Abril de 2025",
+        "location": "São Paulo, Brasil",
+        "bullets": [
+          "Liderei o desenvolvimento de uma aplicação inovadora para uma corretora de seguros, focada na automação da criação de formulários, reduzindo significativamente o tempo de geração de documentos complexos.",
+          "Fui responsável pelo desenvolvimento do back-end utilizando Flask, incluindo a criação de endpoints e integração com a API da OpenAI.",
+          "Implementei um sistema de autenticação robusto, garantindo a proteção e integridade dos dados sensíveis dos usuários.",
+          "Desenvolvi APIs REST para upload e processamento inteligente de documentos via GPT-4 Omni, otimizando tarefas manuais com NLP avançado."
+        ]
+      },
+      {
+        "company": "Espiritus",
+        "position": "Desenvolvedor Full-Stack",
+        "period": "Janeiro de 2024 - Fevereiro de 2025",
+        "location": "São Paulo, Brasil",
+        "bullets": [
+          "Colaborei com dois desenvolvedores sêniores no desenvolvimento de uma aplicação web inovadora, contribuindo para o lançamento bem-sucedido da plataforma para os primeiros usuários.",
+          "Fui responsável pela integração entre o front-end em React/TailwindCSS e o back-end em FastAPI/PostgreSQL, garantindo uma comunicação eficiente e estável.",
+          "Modelei e implementei APIs REST de alto desempenho, otimizando o fluxo de dados e facilitando a escalabilidade da aplicação.",
+          "Configurei autenticação com JWT, fortalecendo a segurança da plataforma e garantindo um controle de acesso robusto desde o MVP."
+        ]
+      },
+      {
+        "company": "Campus Code",
+        "position": "Desenvolvedor Web (Programa TreinaDev)",
+        "period": "Fevereiro de 2023 - Julho de 2023",
+        "location": "São Paulo, Brasil",
+        "bullets": [
+          "Colaborei no desenvolvimento de uma plataforma de clube de compras com Vue.js no front-end e Ruby on Rails no back-end, entregando funcionalidades completas em um ambiente ágil.",
+          "Implementei gerenciamento de estado e rotas protegidas, garantindo uma navegação fluida e segura para os usuários.",
+          "Integrei múltiplos módulos do sistema, promovendo uma arquitetura coesa e escalável.",
+          "Apliquei consistentemente práticas de TDD, elevando a qualidade e estabilidade do código entregue pela equipe."
+        ]
+      }
+    ]
+  },
+  "Projects": {
+    "title": "Projetos",
+    "items": [
+      {
+        "title": "UnifyForm",
+        "description": "Um sistema simples para unificar formulários de diferentes fontes usando inteligência artificial. Foram criados endpoints em Flask e integrada a API da OpenAI para processamento inteligente de documentos.",
+        "src": "/images/unify-form.png",
+        "technologies": ["Python", "Flask", "OpenAI", "JWT", "Docker"],
+        "codeLink": "https://github.com/tecnodiniz/unify-form"
+      },
+      {
+        "title": "Espiritus",
+        "description": "Plataforma para cadastro, gestão e busca de terreiros de matriz africana. O sistema permite que líderes religiosos cadastrem seus terreiros, gerenciem participantes e compartilhem informações importantes como localização, horários e infraestrutura, enquanto os usuários podem buscar e encontrar esses espaços.",
+        "src": "/images/espiritus.png",
+        "technologies": [
+          "React",
+          "TailwindCSS",
+          "FastAPI",
+          "PostgreSQL",
+          "JWT"
+        ],
+        "codeLink": ""
+      },
+      {
+        "title": "TreinaDev Shopping Club",
+        "description": "Desenvolvimento colaborativo de uma plataforma de clube de compras utilizando Vue.js e Ruby on Rails. Foram implementados gerenciamento de estado, rotas protegidas e aplicadas práticas de TDD.",
+        "src": "/images/unavailable.png",
+        "technologies": ["Vue.js", "Ruby on Rails", "TDD", "CSS"],
+        "codeLink": ""
+      },
+      {
+        "title": "Portfólio E_Diniz",
+        "description": "Portfólio criado com Next.js para uso pessoal. Confira o código e veja como foi construído. 🚀",
+        "src": "/images/portfolio.png",
+        "technologies": ["React", "Next", "Typescript", "TailwindCss"],
+        "codeLink": "https://github.com/tecnodiniz/portfolio-ediniz"
+      }
+    ]
+  },
+  "Skills": {
+    "title": "Habilidades Técnicas",
+    "items": [
+      {
+        "name": "Front-End",
+        "skills": [
+          "HTML",
+          "CSS",
+          "Tailwind",
+          "React",
+          "Vue.js",
+          "JavaScript",
+          "TypeScript"
+        ]
+      },
+      {
+        "name": "Back-End",
+        "skills": ["Node.js", "NestJS", "REST", "GraphQL", "Python", "Ruby"]
+      },
+      {
+        "name": "Banco de Dados",
+        "skills": ["PrismaORM", "PostgreSQL", "MongoDB"]
+      },
+      {
+        "name": "Cloud & DevOps",
+        "skills": ["AWS", "GCP", "Docker"]
+      },
+      {
+        "name": "Testes & QA",
+        "skills": ["E2E", "Jest", "TDD"]
+      },
+      {
+        "name": "Segurança",
+        "skills": ["Autenticação JWT", "RSA"]
+      },
+      {
+        "name": "Boas Práticas",
+        "skills": ["Clean Code", "Ágil", "CI/CD", "Git"]
+      }
+    ],
+    "certifications": {
+      "title": "Certificados",
+      "ads": "Análise e Desenvolvimento de Sistemas",
+      "treinaDev": "Programa TreinaDev",
+      "cloud_full": "Cloud Desenvolvimento FullStack"
+    }
+  },
+  "Contact": {
+    "title": "Contato",
+    "get_in": "Entre em contato",
+    "phone": "Telefone",
+    "location": "Localização",
+    "city": "São Paulo, Brasil",
+    "connect": "Conecte-se comigo",
+    "send_message": "Mande uma mensagem",
+    "name": "Nome",
+    "message": "Mensagem",
+    "processing": "Processando",
+    "success": "Obrigado pela mensagem! Respondo em breve.",
+    "error": "Erro ao enviar mensagem.",
+    "submit": "Enviar Mensagem"
+  },
+  "Footer": {
+    "description": "Desenvolvedor de Software especializado na construção de aplicações web com Node.js, Python, React e mais.",
+    "copyright": "Eduardo Diniz. Todos os direitos reservados."
+  },
+
+  "LocaleSwitcher": {
+    "pt-BR": "Português",
+    "en": "Inglês",
+    "label": "Idiomas"
+  }
+}

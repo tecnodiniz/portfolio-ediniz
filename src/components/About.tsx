@@ -1,6 +1,8 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const About = () => {
+  const t = useTranslations("About");
   return (
     <section id="about" className="py-24 bg-dark-bg relative">
       <div className="cyberpunk-grid absolute inset-0 opacity-20"></div>
@@ -55,43 +57,41 @@ const About = () => {
 
           <div className="md:w-1/2">
             <h2 className="text-3xl font-orbitron font-bold mb-6">
-              <span className="text-secondary">&gt;</span> About Me
+              <span className="text-secondary">&gt;</span> {t("about_me")}
             </h2>
 
             <div className="space-y-4 text-foreground/90">
               <p>
-                I&apos;m a{" "}
-                <span className="text-primary">Software Developer</span> with 3
-                years of experience creating scalable applications using React,
-                Next.js, Node.js, NestJS, and Python frameworks like FastAPI and
-                Flask.
+                {t("i_am")} <span className="text-primary">{t("role")}</span>{" "}
+                {t("resume")}.
               </p>
 
               <p>
-                My expertise includes{" "}
-                <span className="text-secondary">Clean Architecture</span>,
-                SOLID principles, and development methodologies like TDD and
-                DDD. I&apos;m passionate about delivering high-quality,
-                performant code solutions.
+                {t("expertise_title")}{" "}
+                <span className="text-secondary">
+                  {t("expertise_clean_arch")}
+                </span>
+                , {t("expertise_text")}.
               </p>
 
               <p>
-                Beyond pure technical skills, I&apos;m committed to best
-                practices like
-                <span className="text-accent"> Clean Code</span>, version
-                control with Git, and quality assurance through linting with
-                ESLint and comprehensive testing.
+                {t("expertise_text_2")}
+                <span className="text-accent">
+                  {" "}
+                  {t("expertise_clean_code")}
+                </span>
+                , {t("expertise_text_3")}.
               </p>
 
               <div className="pt-6 grid grid-cols-2 gap-4">
                 <div>
                   <h3 className="text-lg font-orbitron font-semibold mb-3 text-secondary">
-                    Contact
+                    {t("contact")}
                   </h3>
                   <ul className="space-y-2">
                     <li className="flex items-center">
                       <span className="text-primary mr-2">&#9656;</span>
-                      São Paulo, Brasil
+                      {t("city")}
                     </li>
                     <li className="flex items-center">
                       <span className="text-primary mr-2">&#9656;</span>
@@ -106,20 +106,20 @@ const About = () => {
 
                 <div>
                   <h3 className="text-lg font-orbitron font-semibold mb-3 text-secondary">
-                    Education
+                    {t("education")}
                   </h3>
                   <ul className="space-y-2">
                     <li className="flex items-center">
                       <span className="text-primary mr-2">&#9656;</span>
-                      UNIVERSIDADE ESTÁCIO DE SÁ
+                      {t("university")}
                     </li>
                     <li className="flex items-center">
                       <span className="text-primary mr-2">&#9656;</span>
-                      Análise e Desenvolvimento de Sistemas
+                      {t("course")}
                     </li>
                     <li className="flex items-center">
                       <span className="text-primary mr-2">&#9656;</span>
-                      Completed: December 2024
+                      {t("university_end")}
                     </li>
                   </ul>
                 </div>

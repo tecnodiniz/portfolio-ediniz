@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { useTranslations } from "use-intl";
 
 interface ProjectType {
   title: string;
@@ -12,47 +13,10 @@ interface ProjectType {
   codeLink?: string;
 }
 
-const projects: ProjectType[] = [
-  {
-    title: "UnifyForm",
-    description:
-      "A simple system to unify forms from different sources using artificial intelligence. Created Flask endpoints and integrated OpenAI API for intelligent document processing.",
-    src: "/images/unify-form.png",
-    technologies: ["Python", "Flask", "OpenAI", "JWT", "Docker"],
-
-    codeLink: "https://github.com/tecnodiniz/unify-form",
-  },
-  {
-    title: "Espiritus",
-    description:
-      "Platform for registration, management, and search of African matrix terreiros. The system allows religious leaders to register their terreiros, manage participants, and share important information such as location, schedules, and infrastructure, while users can search for and find these spaces.",
-    src: "/images/espiritus.png",
-    technologies: ["React", "TailwindCSS", "FastAPI", "PostgreSQL", "JWT"],
-
-    codeLink: "",
-  },
-  {
-    title: "TreinaDev Shopping Club",
-    description:
-      "Collaborative development of a shopping club platform using Vue.js and Ruby on Rails. Implemented state management, protected routes, and applied TDD practices.",
-    src: "/images/unavailable.png",
-    technologies: ["Vue.js", "Ruby on Rails", "TDD", "CSS"],
-
-    codeLink: "",
-  },
-  {
-    title: "Portfólio E_Diniz",
-    description:
-      "Portfolio created with Next.js for myself. Check out the code and see how it was built. 🚀 ",
-    src: "/images/portfolio.png",
-    technologies: ["React", "Next", "Typescript", "TailwindCss"],
-
-    codeLink: "https://github.com/tecnodiniz/portfolio-ediniz",
-  },
-];
-
 const Projects = () => {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
+  const t = useTranslations("Projects");
+  const projects = t.raw("items") as ProjectType[];
 
   return (
     <section id="projects" className="py-24 bg-light-bg relative">
@@ -60,7 +24,7 @@ const Projects = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <h2 className="text-3xl font-orbitron font-bold mb-12 text-center">
-          <span className="text-secondary">/</span> Projects{" "}
+          <span className="text-secondary">/</span> {t("title")}{" "}
           <span className="text-secondary">/</span>
         </h2>
 
