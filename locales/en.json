@@ -132,6 +132,13 @@
   },
   "Skills": {
     "title": "Technical Skills",
+    "frontend": "Front End",
+    "backend": "Back End",
+    "database": "Database",
+    "security": "Security",
+    "devops": "DevOps",
+    "qa": "Quality and Testing",
+    "practices": "Best Practices",
 
     "certifications": {
       "title": "Certifications",

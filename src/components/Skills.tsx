@@ -8,7 +8,7 @@ interface SkillCategory {
 
 const stacks: SkillCategory[] = [
   {
-    name: "Front-End",
+    name: "frontend",
     skills: [
       "HTML",
       "CSS",
@@ -21,23 +21,23 @@ const stacks: SkillCategory[] = [
     ],
   },
   {
-    name: "Back-End",
+    name: "backend",
     skills: ["Node.js", "Go", "Python", "Ruby"],
   },
   {
-    name: "Database",
+    name: "database",
     skills: ["PostgreSQL", "MongoDB"],
   },
   {
-    name: "Cloud & DevOps",
+    name: "devops",
     skills: ["AWS", "GCP", "Docker", "Kubernetes"],
   },
   {
-    name: "Testing & QA",
+    name: "qa",
     skills: ["Vitest", "Jest", "Playwright", "Cypress"],
   },
   {
-    name: "Security",
+    name: "security",
     skills: [
       "JWT Authentication",
       "Keycloak",
@@ -46,7 +46,7 @@ const stacks: SkillCategory[] = [
     ],
   },
   {
-    name: "Best Practices",
+    name: "practices",
     skills: ["Clean Code", "Agile", "CI/CD", "Git", "Clean Architecture"],
   },
 ];
@@ -72,7 +72,7 @@ const Skills = () => {
                 className="bg-dark-bg/70 border border-secondary/30 rounded-lg p-6 hover:border-secondary/60 transition-all duration-300"
               >
                 <h3 className="text-xl font-orbitron font-semibold mb-4 text-secondary relative inline-block">
-                  {category.name}
+                  {t(category.name)}
                   <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-primary"></span>
                 </h3>
 

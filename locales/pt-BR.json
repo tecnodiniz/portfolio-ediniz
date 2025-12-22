@@ -128,7 +128,13 @@
   },
   "Skills": {
     "title": "Habilidades Técnicas",
-
+    "frontend": "Front End",
+    "backend": "Back End",
+    "database": "Banco de Dados",
+    "security": "Segurança",
+    "devops": "DevOps",
+    "qa": "Qualidade e Testes",
+    "practices": "Boas Práticas",
     "certifications": {
       "title": "Certificados",
       "ads": "Análise e Desenvolvimento de Sistemas",
