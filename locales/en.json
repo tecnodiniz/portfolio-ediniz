@@ -16,7 +16,7 @@
   "About": {
     "about_me": "About Me",
     "i_am": "I'm a",
-    "role": "Software Developer",
+    "role": "Software Engineer",
     "resume": "with 3 years of experience creating scalable applications using React, Next.js, Node.js, NestJS, and Python frameworks like FastAPI and Flask",
     "expertise_title": "My expertise includes",
     "expertise_clean_arch": "Clean Architecture",

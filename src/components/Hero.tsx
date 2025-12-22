@@ -4,7 +4,7 @@ import { useTranslations } from "next-intl";
 
 const Hero = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const t = useTranslations("Hero");
+  const t = useTranslations();
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -88,16 +88,16 @@ const Hero = () => {
 
         <h3 className="font-mono text-xl md:text-2xl mb-6 text-foreground/90">
           <span className="text-primary">&lt;</span>
-          Software Developer
+          {t("About.role")}
           <span className="text-primary">/&gt;</span>
         </h3>
 
         <p className="text-lg mb-8 max-w-2xl mx-auto md:mx-0">
-          {t("specialize")}
-          <span className="text-secondary"> Node.js</span>,
-          <span className="text-primary"> NestJS</span>,
-          <span className="text-primary"> Next.js</span>,
-          <span className="text-accent"> Python</span> {t("and_more")}.
+          {t("Hero.specialize")}
+          <span className="text-glitch"> Golang</span>,
+          <span className="text-secondary"> React</span>,
+          <span className="text-primary"> Next</span>,
+          <span className="text-accent"> Python</span> {t("Hero.and_more")}.
         </p>
 
         <div className="flex gap-4 flex-col sm:flex-row justify-center md:justify-start">
@@ -106,7 +106,7 @@ const Hero = () => {
             className="px-8 py-3 border border-primary rounded bg-primary/10 
               hover:bg-primary/20 transition-all duration-300 font-orbitron flex items-center justify-center"
           >
-            {t("view_my_work")}
+            {t("Hero.view_my_work")}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5 ml-2"
@@ -128,7 +128,7 @@ const Hero = () => {
             className="px-8 py-3 border border-secondary rounded bg-secondary/10 
               hover:bg-secondary/20 transition-all duration-300 font-orbitron flex items-center justify-center"
           >
-            {t("contact_me")}
+            {t("Hero.contact_me")}
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5 ml-2"

@@ -22,9 +22,9 @@ const orbitron = Orbitron({
 });
 
 export const metadata: Metadata = {
-  title: "Eduardo Diniz | Software Developer",
+  title: "Eduardo Diniz | Software Engineer",
   description:
-    "Portfolio of Eduardo Diniz, Software Developer specializing in Node.js, Python, React and more",
+    "Portfolio of Eduardo Diniz, Software Engineer specializing in Node.js, Python, React and more",
 };
 
 export default async function RootLayout({
