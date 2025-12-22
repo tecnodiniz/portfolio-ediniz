@@ -34,9 +34,6 @@ const Contact = () => {
     setIsSubmitting(true);
     setSubmitMessage(null);
 
-    console.log(e);
-    // Simulate form submission
-
     try {
       await sendEmail(formData);
       setFormData({
@@ -58,20 +55,6 @@ const Contact = () => {
         text: `${t("error")}: ${error}`,
       });
     }
-    // setTimeout(() => {
-    //   setIsSubmitting(false);
-    //   setSubmitMessage({
-    //     type: "success",
-    //     text: "Thanks for your message! I'll get back to you soon.",
-    //   });
-
-    //   // Reset form after successful submission
-    //         setFormData({
-    //     name: "",
-    //     email: "",
-    //     message: "",
-    //   });
-    // }, 1500);
   };
 
   return (
