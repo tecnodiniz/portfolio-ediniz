@@ -6,9 +6,53 @@ interface SkillCategory {
   skills: string[];
 }
 
+const stacks: SkillCategory[] = [
+  {
+    name: "Front-End",
+    skills: [
+      "HTML",
+      "CSS",
+      "Tailwind",
+      "React",
+      "Vue",
+      "JavaScript",
+      "TypeScript",
+      "Next",
+    ],
+  },
+  {
+    name: "Back-End",
+    skills: ["Node.js", "Go", "Python", "Ruby"],
+  },
+  {
+    name: "Database",
+    skills: ["PostgreSQL", "MongoDB"],
+  },
+  {
+    name: "Cloud & DevOps",
+    skills: ["AWS", "GCP", "Docker", "Kubernetes"],
+  },
+  {
+    name: "Testing & QA",
+    skills: ["Vitest", "Jest", "Playwright", "Cypress"],
+  },
+  {
+    name: "Security",
+    skills: [
+      "JWT Authentication",
+      "Keycloak",
+      "Firebase Authentication",
+      "OpenFGA",
+    ],
+  },
+  {
+    name: "Best Practices",
+    skills: ["Clean Code", "Agile", "CI/CD", "Git", "Clean Architecture"],
+  },
+];
+
 const Skills = () => {
   const t = useTranslations("Skills");
-  const skillCategories = t.raw("items") as SkillCategory[];
   return (
     <section id="skills" className="py-24 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-dark-bg to-background z-0"></div>
@@ -22,7 +66,7 @@ const Skills = () => {
 
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {skillCategories.map((category, index) => (
+            {stacks.map((category, index) => (
               <div
                 key={index}
                 className="bg-dark-bg/70 border border-secondary/30 rounded-lg p-6 hover:border-secondary/60 transition-all duration-300"

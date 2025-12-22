@@ -128,44 +128,7 @@
   },
   "Skills": {
     "title": "Habilidades Técnicas",
-    "items": [
-      {
-        "name": "Front-End",
-        "skills": [
-          "HTML",
-          "CSS",
-          "Tailwind",
-          "React",
-          "Vue.js",
-          "JavaScript",
-          "TypeScript"
-        ]
-      },
-      {
-        "name": "Back-End",
-        "skills": ["Node.js", "NestJS", "REST", "GraphQL", "Python", "Ruby"]
-      },
-      {
-        "name": "Banco de Dados",
-        "skills": ["PrismaORM", "PostgreSQL", "MongoDB"]
-      },
-      {
-        "name": "Cloud & DevOps",
-        "skills": ["AWS", "GCP", "Docker"]
-      },
-      {
-        "name": "Testes & QA",
-        "skills": ["E2E", "Jest", "TDD"]
-      },
-      {
-        "name": "Segurança",
-        "skills": ["Autenticação JWT", "RSA"]
-      },
-      {
-        "name": "Boas Práticas",
-        "skills": ["Clean Code", "Ágil", "CI/CD", "Git"]
-      }
-    ],
+
     "certifications": {
       "title": "Certificados",
       "ads": "Análise e Desenvolvimento de Sistemas",
