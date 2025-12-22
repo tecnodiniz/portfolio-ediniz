@@ -35,6 +35,21 @@
     "work_experience": "Work Experience",
     "items": [
       {
+        "company": "Economatica",
+        "position": "Software Engineer",
+        "period": "June 2025 - Present",
+        "location": "São Paulo, Brazil",
+        "bullets": [
+          "Led the development of 60% of the front-end for a user and contract management system (Backoffice) using React, delivering responsive and user-friendly interfaces.",
+          "Built and maintained API routes in Go to enable seamless microservices integration.",
+          "Oversaw deployment processes and provided technical support to end users.",
+          "Contributed to the modernization of the company's legacy core system.",
+          "Designed and implemented a comprehensive front-end testing strategy using Playwright, Vitest, React Testing Library, and MSW.",
+          "Maintained and enhanced React Native and Next.js applications, ensuring performance and reliability.",
+          "Collaborated within an agile team, conducting code reviews and applying software engineering best practices."
+        ]
+      },
+      {
         "company": "Facility & Bond",
         "position": "Network Analyst & Developer",
         "period": "October 2019 - May 2025",
@@ -44,18 +59,6 @@
           "Took responsibility for the integration between the React/TailwindCSS front-end and the FastAPI/PostgreSQL back-end, ensuring efficient and stable communication.",
           "Modeled and implemented high-performance REST APIs, optimizing data flow and facilitating application scalability.",
           "Configured JWT authentication, strengthening platform security and ensuring robust access control from the MVP."
-        ]
-      },
-      {
-        "company": "UnifyForm",
-        "position": "Back-End Developer",
-        "period": "March 2025 - April 2025",
-        "location": "São Paulo, Brazil",
-        "bullets": [
-          "Led the development of an innovative application for an insurance broker, focused on automating form creation, significantly reducing the time for generating complex documents.",
-          "Responsible for backend development using Flask, including creating endpoints and integrating with OpenAI API.",
-          "Implemented a robust authentication system, ensuring the protection and integrity of sensitive user data.",
-          "Developed REST APIs for uploading and intelligent document processing via GPT-4 Omni, optimizing manual tasks with advanced NLP."
         ]
       },
       {
