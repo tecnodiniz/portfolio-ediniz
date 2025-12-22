@@ -42,7 +42,8 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://github.com/tecnodiniz"
+                target="_blank"
                 className="w-10 h-10 rounded-full bg-dark-bg border border-primary/50 flex items-center justify-center text-primary hover:bg-primary/10 transition-colors duration-300"
               >
                 <svg
