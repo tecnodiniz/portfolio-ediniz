@@ -34,9 +34,6 @@ const Contact = () => {
     setIsSubmitting(true);
     setSubmitMessage(null);
 
-    console.log(e);
-    // Simulate form submission
-
     try {
       await sendEmail(formData);
       setFormData({
@@ -58,20 +55,6 @@ const Contact = () => {
         text: `${t("error")}: ${error}`,
       });
     }
-    // setTimeout(() => {
-    //   setIsSubmitting(false);
-    //   setSubmitMessage({
-    //     type: "success",
-    //     text: "Thanks for your message! I'll get back to you soon.",
-    //   });
-
-    //   // Reset form after successful submission
-    //         setFormData({
-    //     name: "",
-    //     email: "",
-    //     message: "",
-    //   });
-    // }, 1500);
   };
 
   return (
@@ -196,6 +179,7 @@ const Contact = () => {
                 </a>
                 <a
                   href="https://github.com/tecnodiniz/"
+                  target="_blank"
                   className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary hover:bg-primary/30 transition-colors duration-300"
                 >
                   <svg

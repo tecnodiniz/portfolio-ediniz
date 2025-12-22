@@ -36,7 +36,7 @@ const About = () => {
                 <code>{`function init() {
   return {
     name: "Eduardo",
-    role: "Software Developer"
+    role: "Software Engineer"
   }
 }`}</code>
               </pre>

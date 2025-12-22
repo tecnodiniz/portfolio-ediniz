@@ -16,8 +16,8 @@
   "About": {
     "about_me": "Sobre mim",
     "i_am": "Sou",
-    "role": "Desenvolvedor de Software",
-    "resume": "com 3 anos de experiência criando aplicações escaláveis usando React, Next.js, Node.js, NestJS e frameworks Python como FastAPI e Flask",
+    "role": "Engenheiro de Software",
+    "resume": "com 3 anos de experiência criando aplicações escaláveis usando React, Next.js, Go e frameworks Python como FastAPI e Flask",
     "expertise_title": "Minha especialidade inclui",
     "expertise_clean_arch": "Arquitetura Limpa",
     "expertise_text": "princípios SOLID e metodologias de desenvolvimento como TDD e DDD. Sou apaixonado por entregar soluções de código performáticas e de alta qualidade",
@@ -35,6 +35,21 @@
     "work_experience": "Experiência Profissional",
     "items": [
       {
+        "company": "Economatica",
+        "position": "Engenheiro de Software",
+        "period": "Junho de 2025 - Atualmente",
+        "location": "São Paulo, Brasil",
+        "bullets": [
+          "Liderei o desenvolvimento de 60% do front-end de um sistema de gerenciamento de usuários e contratos (Backoffice), utilizando React, entregando interfaces responsivas e intuitivas.",
+          "Desenvolvi e mantive rotas de API em Go, possibilitando a integração eficiente entre microsserviços.",
+          "Supervisionei os processos de deploy e forneci suporte técnico aos usuários finais.",
+          "Contribuí para a modernização do sistema core legado da empresa.",
+          "Projetei e implementei uma estratégia completa de testes de front-end, utilizando Playwright, Vitest, React Testing Library e MSW.",
+          "Mantive e evoluí aplicações React Native e Next.js, garantindo performance, estabilidade e confiabilidade.",
+          "Atuei de forma colaborativa em times ágeis, realizando code reviews e aplicando boas práticas de engenharia de software."
+        ]
+      },
+      {
         "company": "Facility & Bond",
         "position": "Analista de Redes e Desenvolvedor",
         "period": "Outubro de 2019 - Maio de 2025",
@@ -44,18 +59,6 @@
           "Fui responsável pela integração entre o front-end em React/TailwindCSS e o back-end em FastAPI/PostgreSQL, garantindo uma comunicação eficiente e estável.",
           "Modelei e implementei APIs REST de alto desempenho, otimizando o fluxo de dados e facilitando a escalabilidade da aplicação.",
           "Configurei autenticação com JWT, fortalecendo a segurança da plataforma e garantindo um controle de acesso robusto desde o MVP."
-        ]
-      },
-      {
-        "company": "UnifyForm",
-        "position": "Desenvolvedor Back-End",
-        "period": "Março de 2025 - Abril de 2025",
-        "location": "São Paulo, Brasil",
-        "bullets": [
-          "Liderei o desenvolvimento de uma aplicação inovadora para uma corretora de seguros, focada na automação da criação de formulários, reduzindo significativamente o tempo de geração de documentos complexos.",
-          "Fui responsável pelo desenvolvimento do back-end utilizando Flask, incluindo a criação de endpoints e integração com a API da OpenAI.",
-          "Implementei um sistema de autenticação robusto, garantindo a proteção e integridade dos dados sensíveis dos usuários.",
-          "Desenvolvi APIs REST para upload e processamento inteligente de documentos via GPT-4 Omni, otimizando tarefas manuais com NLP avançado."
         ]
       },
       {
@@ -125,44 +128,13 @@
   },
   "Skills": {
     "title": "Habilidades Técnicas",
-    "items": [
-      {
-        "name": "Front-End",
-        "skills": [
-          "HTML",
-          "CSS",
-          "Tailwind",
-          "React",
-          "Vue.js",
-          "JavaScript",
-          "TypeScript"
-        ]
-      },
-      {
-        "name": "Back-End",
-        "skills": ["Node.js", "NestJS", "REST", "GraphQL", "Python", "Ruby"]
-      },
-      {
-        "name": "Banco de Dados",
-        "skills": ["PrismaORM", "PostgreSQL", "MongoDB"]
-      },
-      {
-        "name": "Cloud & DevOps",
-        "skills": ["AWS", "GCP", "Docker"]
-      },
-      {
-        "name": "Testes & QA",
-        "skills": ["E2E", "Jest", "TDD"]
-      },
-      {
-        "name": "Segurança",
-        "skills": ["Autenticação JWT", "RSA"]
-      },
-      {
-        "name": "Boas Práticas",
-        "skills": ["Clean Code", "Ágil", "CI/CD", "Git"]
-      }
-    ],
+    "frontend": "Front End",
+    "backend": "Back End",
+    "database": "Banco de Dados",
+    "security": "Segurança",
+    "devops": "DevOps",
+    "qa": "Qualidade e Testes",
+    "practices": "Boas Práticas",
     "certifications": {
       "title": "Certificados",
       "ads": "Análise e Desenvolvimento de Sistemas",
@@ -186,7 +158,7 @@
     "submit": "Enviar Mensagem"
   },
   "Footer": {
-    "description": "Desenvolvedor de Software especializado na construção de aplicações web com Node.js, Python, React e mais.",
+    "description": "Engenheiro de Software especializado na construção de aplicações web com Node.js, Python, React e mais.",
     "copyright": "Eduardo Diniz. Todos os direitos reservados."
   },
 
